@@ -22,7 +22,7 @@ This project utilizes the OpenTK library to create a simple graphics application
    cd opentk-project
 
 2.**Build and Run:**
- ```bash
+   ```bash
    dotnet build
    dotnet run
 
