@@ -23,6 +23,6 @@ This project utilizes the OpenTK library to create a simple graphics application
 
 2.**Build and Run:**
  ```bash
-dotnet build
-dotnet run
+   dotnet build
+   dotnet run
 
