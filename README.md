@@ -21,7 +21,7 @@ This project utilizes the OpenTK library to create a simple graphics application
    git clone https://github.com/fokaz-c/openTK-project-1.git
    cd opentk-project
 
-2.**Build and Run:**
+2. **Build and Run:**
    ```bash
    dotnet build
    dotnet run
