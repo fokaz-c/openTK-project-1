@@ -24,7 +24,7 @@ This is a simple OpenTK project that demonstrates a basic 3D rendering setup usi
 
 ### Prerequisites
 
-- .NET SDK (version X.X.X or later) [Installation Guide](https://dotnet.microsoft.com/download)
+- .NET SDK [Installation Guide](https://dotnet.microsoft.com/download)
 - OpenTK library
 
 ### Installation
