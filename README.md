@@ -53,6 +53,7 @@ This is a simple OpenTK project that demonstrates a basic 3D rendering setup usi
 - `Game.cs`: Main class that inherits from OpenTK's `GameWindow` and contains the game logic, rendering, and setup.
 - `Shaders/`: Directory containing vertex and fragment shader source files.
 - `Textures/`: Directory containing texture files used in the project.
+- `Program.cs`: Entry point for the application, creating an instance of the `Game` class and starting the game loop.
 
 ## Contributing
 
