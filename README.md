@@ -46,7 +46,7 @@ This is a simple OpenTK project that demonstrates a basic 3D rendering setup usi
 ## Usage
 
 - Upon running the application, a window will open displaying a rotating textured cube.
-- Use keyboard and mouse inputs for camera and interaction controls (specifics can be added here).
+
 
 ## Project Structure
 
