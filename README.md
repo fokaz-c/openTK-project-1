@@ -32,7 +32,7 @@ This is a simple OpenTK project that demonstrates a basic 3D rendering setup usi
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/OpenTK-Project1.git
+    git clone https://github.com/fokaz-c/OpenTK-Project1.git
     cd OpenTK-Project1
     ```
 
