@@ -8,8 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OpenTK.Windowing.Common;
 using OpenTK.Graphics.OpenGL4;
+using OpenTK.Windowing.GraphicsLibraryFramework;
 
 namespace GameEngine
 {
@@ -116,6 +116,10 @@ namespace GameEngine
         int textureVBO;
         int ebo;
         int textureID;
+
+        //camera
+        Camera camera;
+
 
 
         // transformation variables
@@ -245,6 +249,9 @@ namespace GameEngine
             GL.BindTexture(TextureTarget.Texture2D, 0);
 
             GL.Enable(EnableCap.DepthTest);
+
+            camera = new Camera(width, height, Vector3.Zero);
+            CursorState = CursorState.Grabbed;
         }
         // called once when game is closed
         protected override void OnUnload()
@@ -276,8 +283,8 @@ namespace GameEngine
 
             // transformation matrices
             Matrix4 model = Matrix4.Identity;
-            Matrix4 view = Matrix4.Identity;
-            Matrix4 projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(60.0f), width / height, 0.1f, 100.0f);
+            Matrix4 view = camera.GetViewMatrix();
+            Matrix4 projection = camera.GetProjectionMatrix();
 
 
             model = Matrix4.CreateRotationY(yRot);
@@ -307,6 +314,11 @@ namespace GameEngine
         // called every frame. All updating happens here
         protected override void OnUpdateFrame(FrameEventArgs args)
         {
+            MouseState mouse = MouseState;
+            KeyboardState input = KeyboardState;
+
+            camera.Update(input,mouse,args);
+
             base.OnUpdateFrame(args);
         }
 
